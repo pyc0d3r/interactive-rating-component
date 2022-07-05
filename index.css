@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Overpass', sans-serif;
-  font-weight: 400px;
+  font-weight: 25rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,9 +17,9 @@ body {
 }
 
 .star-bubble {
-  width: 50px;
+  width: 3.1rem;
   background-color: hsl(213, 19%, 18%);
-  height: 50px;
+  height: 3.1rem;
   border-radius: 50%;
   display: flex;
   position: absolute;
@@ -30,7 +30,7 @@ body {
 }
 
 img {
-  width: 20px;
+  width: 1.2rem;
 }
 
 h3 {
@@ -40,16 +40,16 @@ h3 {
 .container {
   padding-top: 5rem;
   display: flex;
-  gap: 50px;
+  gap: 3.1rem;
   flex-direction: column;
 }
 
 .rating-state {
-  background: radial-gradient(circle at center top, hsl(213, 19%, 18%)20%, hsl(216, 12%, 8%) 100%);
+  background: radial-gradient(circle at center top, hsl(213, 19%, 18%)10%, hsl(216, 12%, 8%) 125%);
   color: hsl(0, 0%, 100%);
   padding-block: 3rem;
-  width: 400px;
-  height: 420px;
+  width: 25rem;
+  height: 26.2rem;
   border-radius: 2rem;
   padding: 2rem;
 }
@@ -69,7 +69,7 @@ button {
   border: none;
   background-color: hsl(25, 97%, 53%);
   border-radius: 2rem;
-  padding: 1rem;
+  padding: 0.7rem;
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -125,7 +125,7 @@ input:checked+label {
 }
 
 .illustration {
-  width: 150px;
+  width: 9.4rem;
 }
 
 .select {

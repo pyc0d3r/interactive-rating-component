@@ -22,7 +22,7 @@
 
     <div class="container" id="thanks">
       <p class="select">You selected <span id="number"> </span> out of 5</p>
-      <h2>Thank you!</h2>
+      <h3>Thank you!</h3>
       <p>We appreciate you taking the time to give a rating. If you ever need more support,
         don’t hesitate to get in touch!</p>
     </div>
@@ -30,7 +30,7 @@
   
   <script>
     let params = new URLSearchParams(location.search);
-    let rate = parseInt(params.get("rating"));
+    let rate = parseInt(params.get("rating") || 0);
     document.getElementById("number").innerText = rate;
   </script>
 </body>
