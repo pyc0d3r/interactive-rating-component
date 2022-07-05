@@ -13,34 +13,26 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Overpass:wght@100;400&display=swap');
   </style>
-
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
+
 <body>
 
-<!-- Thank you state start --><div class="rating-state" id="stated">
-<img class="illustration" src="images/illustration-thank-you.svg" alt="illustration">
+  <div class="rating-state" id="stated">
+    <img class="illustration" src="images/illustration-thank-you.svg" alt="illustration">
 
-  <div class="container" id="thanks">
-<p class="select">You selected
-<!-- Add rating here --> out of 5</p>
-
-<h2>Thank you!</h2>
-
-<p>We appreciate you taking the time to give a rating. If you ever need more support,
-don’t hesitate to get in touch!</p>
-</div>
-</div>
-<!-- Thank you state end -->
-
+    <div class="container" id="thanks">
+      <p class="select">You selected <span id="number"> </span> out of 5</p>
+      <h2>Thank you!</h2>
+      <p>We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!</p>
+    </div>
+  </div>
+  
+  <script>
+    let params = new URLSearchParams(location.search);
+    let rate = parseInt(params.get("rating"));
+    document.getElementById("number").innerText = rate;
+  </script>
 </body>
+
 </html>
